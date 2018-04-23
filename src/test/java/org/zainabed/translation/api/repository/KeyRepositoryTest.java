@@ -46,7 +46,7 @@ public class KeyRepositoryTest {
 	}
 
 	@Test
-	public void updateOneShouldRefelectChanges() {
+	public void shouldUpdateModel() {
 		String updatedName = "updated name";
 		key.setName(updatedName);
 		testKey = repository.save(key);
@@ -54,7 +54,7 @@ public class KeyRepositoryTest {
 	}
 
 	@Test
-	public void deleteShouldRemoveKeyFromDB() {
+	public void shouldDeleteModel() {
 		repository.delete(key.getId());
 		testKey = repository.findOne(key.getId());
 		assertNull(testKey);
