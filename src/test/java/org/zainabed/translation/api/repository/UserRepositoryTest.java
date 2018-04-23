@@ -31,7 +31,7 @@ public class UserRepositoryTest {
 		user.setPassword("test password");
 		user.setEmail("test@email.com");
 		user.setStatus("active");
-		user.setCreated_at(new Date());
+		user.setCreatedAt(new Date());
 
 		// Insert into DB
 		user = repository.save(user);

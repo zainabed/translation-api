@@ -13,25 +13,25 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.zainabed.translation.api.model.Project;
+import org.zainabed.translation.api.model.Key;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
-public class ProjectRepositoryTest {
+public class KeyRepositoryTest {
 
 	@Autowired
-	private ProjectRepository repository;
-	private Project project;
-	private Project testProject;
+	private KeyRepository repository;
+	private Key key;
+	private Key testKey;
 
 	@Before
 	public void beforeEach() {
-		project = new Project();
-		project.setName("test project");
-		project.setDescription("test description");
-		project.setCreatedAt(new Date());
+		key = new Key();
+		key.setName("test key");
+		key.setDescription("test description");
+		key.setCreatedAt(new Date());
 		// Insert into DB
-		project = repository.save(project);
+		key = repository.save(key);
 	}
 
 	@After
@@ -41,23 +41,23 @@ public class ProjectRepositoryTest {
 
 	@Test
 	public void findOneShouldPassCauseUserIsInsertedIntoDB() {
-		testProject = repository.findOne(project.getId());
-		assertNotNull(testProject);
+		testKey = repository.findOne(key.getId());
+		assertNotNull(testKey);
 	}
 
 	@Test
 	public void updateOneShouldRefelectChanges() {
 		String updatedName = "updated name";
-		project.setName(updatedName);
-		testProject = repository.save(project);
-		assertEquals(testProject.getName(), updatedName);
+		key.setName(updatedName);
+		testKey = repository.save(key);
+		assertEquals(testKey.getName(), updatedName);
 	}
 
 	@Test
-	public void deleteShouldRemoveProjectFromDB() {
-		repository.delete(project.getId());
-		testProject = repository.findOne(project.getId());
-		assertNull(testProject);
+	public void deleteShouldRemoveKeyFromDB() {
+		repository.delete(key.getId());
+		testKey = repository.findOne(key.getId());
+		assertNull(testKey);
 	}
 
 }
