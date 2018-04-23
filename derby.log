@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Apr 23 12:45:26 IST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0162-f15b-7854-000004e96088 
+on database directory memory:C:\Projects\firstcard-translation-api\testdb with class loader sun.misc.Launcher$AppClassLoader@7cc355be 
+Loaded from file:/C:/Users/shaikzai/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_101-b13
+user.dir=C:\Projects\firstcard-translation-api
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
