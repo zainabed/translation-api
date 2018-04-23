@@ -21,7 +21,11 @@ public class ModelTestConfig {
 	}
 
 	protected void verifyModel(BaseModel model, int constraintCount) {
-		 Set<ConstraintViolation<BaseModel>> constraint = validator.validate(model);
-		 assertEquals(constraintCount, constraint.size());
+		 Set<ConstraintViolation<BaseModel>> constraints = validator.validate(model);
+		 assertEquals(constraintCount, constraints.size());
+		 for(ConstraintViolation<BaseModel> constraint:constraints){
+			 System.out.println(constraint.getPropertyPath());
+			 System.out.println(constraint.getMessage());
+		 }
 	}
 }
