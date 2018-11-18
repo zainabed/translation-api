@@ -15,7 +15,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.zainabed.translation.api.model.Project;
-import org.zainabed.translation.api.repository.ProjectRepository;
+import org.zainabed.translation.api.model.ProjectRepository;
 import org.zainabed.translation.api.resource.ProjectResource;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;

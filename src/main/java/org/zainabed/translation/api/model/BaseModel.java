@@ -17,20 +17,20 @@ abstract public class BaseModel {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	protected Long id;
+	protected long id;
 
-	protected Date createdAt;
-	protected Date updatedAt;
+	//protected Date createdAt;
+	//protected Date updatedAt;
 
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
-	public Date getCreatedAt() {
+	/*public Date getCreatedAt() {
 		return createdAt;
 	}
 
@@ -44,6 +44,6 @@ abstract public class BaseModel {
 
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
-	}
+	}*/
 
 }

@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.zainabed.translation.api.model.Project;
+import org.zainabed.translation.api.model.ProjectRepository;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)

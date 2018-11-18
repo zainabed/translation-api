@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.zainabed.translation.api.model.Project;
-import org.zainabed.translation.api.repository.ProjectRepository;
+import org.zainabed.translation.api.model.ProjectRepository;
 
 //@RestController
 //@RequestMapping("/project")
